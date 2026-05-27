@@ -1,3 +1,62 @@
-/* #goToApp {
-    background-color: #007bff;
-} */
+body {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    justify-content: center;
+    justify-items: center;
+}
+
+#cover {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#introText {
+    font-size: 1.2em;
+    width: 80vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#buttonsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    /* align-items: center; */
+    gap: 20px;
+    width: 60vw;
+    margin-top: 5vh;
+    padding-top: 1vh;
+}
+.btn {
+    border-top: 1vh solid white;
+    border-bottom: 1vh solid white;
+    border-left: 1vw solid white;
+    border-right: 1vw solid white;
+    background-color: white;
+    width: 7vw;
+    align-items: left;
+    justify-items: top;
+}
+.btn:active {
+    background-color: lightgray;
+    border-top: solid 1vh lightgray;
+    border-bottom: solid 1vh lightgray;
+    border-left: solid 1vw lightgray;
+    border-right: solid 1vw lightgray;
+}
+.btn_image {
+    width: 5vw;
+    height: auto;
+}
+#goToAppBtn {
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+#goToAppBtn:active {
+    scale: 0.95;
+}

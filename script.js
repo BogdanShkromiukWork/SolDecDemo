@@ -2,11 +2,10 @@ const copyLinkBtn_const = document.getElementById('copyLinkBtn');
 const sendLinkBtn_const = document.getElementById('sendLinkBtn');
 const goToAppBtn_const = document.getElementById('goToAppBtn');
 const app_url = "https://bogdanshkromiukwork.github.io/SolDec3/";
-goToAppBtn_const.addEventListener('click', () => {
+goToAppBtn_const.addEventListener('click', async () => {
     window.open(app_url, '_blank');
 });
 copyLinkBtn_const.addEventListener('click', async () => {
-    alert("hi");
     try {
         await navigator.clipboard.writeText(app_url);
         alert('Link copied to clipboard!');
