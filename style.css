@@ -27,7 +27,7 @@ body {
     justify-items: center;
     /* align-items: center; */
     gap: 20px;
-    width: 60vw;
+    width: 100vw;
     margin-top: 5vh;
     padding-top: 1vh;
 }
@@ -37,7 +37,7 @@ body {
     border-left: 1vw solid white;
     border-right: 1vw solid white;
     background-color: white;
-    width: 7vw;
+    width: 30vw;
     align-items: left;
     justify-items: top;
 }
